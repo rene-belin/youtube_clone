@@ -83,8 +83,9 @@ input[type="search"] {
 
 .menu-droite {
     flex: 1;
-    background-color: rgb(130, 182, 238);
     padding: 1rem;
+    background: #f9f9f9;
+    /* padding: 1rem; */
 }
 
 .menu-gauche ul {
@@ -121,4 +122,62 @@ ul h2 {
     color: rgb(163, 163, 163);
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(253px, 1fr));
+    gap: 2rem 1rem;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.video::before {
+    content: attr(data-duration);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    bottom: 30%;
+    right: 0.7rem;
+}
+
+.couverture-video {
+    width: 100%;
+    height: 100%;
+    min-width: 253px;
+    min-height: 142px;
+    background: #aaa;
+    border-radius: 10px;
+}
+
+.section-bas-video {
+    display: flex;
+    margin-top: 0.6rem;
+}
+
+.detail-video {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.titre-de-video {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 1rem;
+}
+
+.nom-de-chaine,
+.meta-donnees {
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-left: 1rem;
 }

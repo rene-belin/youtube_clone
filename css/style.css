@@ -11,6 +11,7 @@
     font-family: -apple-system, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* ****************** HEADER ****************** */
 .header {
     display: flex;
     justify-content: space-between;
@@ -36,6 +37,7 @@ input[type="search"] {
     font-style: 1rem;
     border: solid 1px#ccc;
     border-radius: 0.5rem;
+    /* Cette propriété CSS enlève tout arrondi sur le coin haut et bas droit de l'élément. */
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: none;
@@ -52,6 +54,7 @@ input[type="search"] {
 
 .icons-menu-haut {
     display: grid;
+    /* Crée quatre colonnes dans la grille */
     grid-template-columns: repeat(4, auto);
     gap: 1rem;
     align-items: center;
@@ -70,22 +73,15 @@ input[type="search"] {
     font-size: 2rem;
 }
 
-/* ****************** section principale ****************** */
 .section-principal {
     display: flex;
 }
 
+/* ****************** MENU GAUCHE ****************** */
 .menu-gauche {
     flex: 1;
     max-width: 18%;
     margin-top: 1.2rem;
-}
-
-.menu-droite {
-    flex: 1;
-    padding: 1rem;
-    background: #f9f9f9;
-    /* padding: 1rem; */
 }
 
 .menu-gauche ul {
@@ -123,9 +119,16 @@ ul h2 {
     font-size: 1rem;
     text-transform: uppercase;
 }
-
+/* ****************** MENU DROITE ****************** */
+.menu-droite {
+    flex: 1;
+    padding: 1rem;
+    background: #f9f9f9;
+    /* padding: 1rem; */
+}
 .videos {
     display: grid;
+    /* créer une grille flexible qui s'ajuste dynamiquement en fonction de la largeur de l'écran et du contenu */
     grid-template-columns: repeat(auto-fill, minmax(253px, 1fr));
     gap: 2rem 1rem;
 }
@@ -137,6 +140,7 @@ ul h2 {
 }
 
 .video::before {
+    /* affiche la durée des vidéos */
     content: attr(data-duration);
     position: absolute;
     background: rgba(0, 0, 0, 0.85);
@@ -154,6 +158,7 @@ ul h2 {
     border-radius: 10px;
 }
 
+/* ****************** MENU DROITE - SECTION BAS VIDEO ****************** */
 .section-bas-video {
     display: flex;
     margin-top: 0.6rem;

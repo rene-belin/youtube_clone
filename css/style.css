@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 *,
 *::after,
 *::before {
@@ -5,10 +7,9 @@
     box-sizing: border-box;
 }
 
-/* .main {
-    width: 95%;
-    margin: 1rem auto;
-} */
+.main {
+    font-family: -apple-system, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .header {
     display: flex;
@@ -55,9 +56,11 @@ input[type="search"] {
     gap: 1rem;
     align-items: center;
 }
-.icons-menu-haut a{
+
+.icons-menu-haut a {
     color: rgba(14, 14, 14, 0.822);
 }
+
 .icon-chaine {
     border-radius: 50%;
     background: #aaa;
@@ -88,9 +91,11 @@ input[type="search"] {
     list-style: none;
     padding: 0;
 }
-.list{
+
+.list {
     padding: 0.8rem 1.5rem;
 }
+
 li a {
     text-decoration: none;
     color: #535353;
@@ -100,31 +105,20 @@ li a {
 .list-text {
     margin-left: 1.2rem;
 }
-li a{
+
+li a {
     display: flex;
     align-items: center;
 }
-.list:hover, li.active{
+
+.list:hover,
+li.active {
     background: #e2e2e2c4;
 }
-ul h2{
+
+ul h2 {
     padding: 0.5rem 1.5rem;
     color: rgb(163, 163, 163);
     font-size: 1rem;
     text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
